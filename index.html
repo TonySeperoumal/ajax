@@ -24,6 +24,13 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 	<script>
 		// console.log("yo");
+		// execute la fonction anonyme à chaque 2 secondes
+		//utile pour faire des verifications periodique sur le server
+		//genre verifier s'il ya des nouveaute ds la bdd
+		window.setInternal(function(){
+			console.log('yo !');
+		}, 2000);
+
 		$('#btn').on('click', function(){
 
 			$.ajax({
